@@ -1,0 +1,640 @@
+/*download fonts*/
+ @import url(http://allfont.ru/allfont.css?fonts=quicksand-bold);
+
+/*default options*/
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand Bold', arial;
+}
+
+.container
+{
+	max-width: 1152px;
+	margin: 0 auto;
+}
+
+
+/*display none*/
+
+.ds{display: none;}
+
+/*float*/
+.left{float: left;}
+.right{float: right;}
+.clear{clear: both;}
+
+/*text align*/
+.t_center{text-align: center;}
+.t_left{text-align: left;}
+.t_right{text-align: right;}
+
+
+/*color text*/
+.white_t{color: white;}
+
+
+/*text-uppercase*/
+.upper{text-transform: uppercase;}
+
+
+/*margin*/
+.mr_l_34{margin-left: 34px;}
+.mr_r_29{margin-right: 29px;}
+
+/*btn -> all buttons files.html*/
+.btn{display: inline-block;}
+/*twitter*/
+.btn_tw
+{
+	width: 29px;
+	height: 24px;
+	background: url(../img/soc_tw.png);
+}
+
+.btn-order, .btn-cross {
+    width: 97%;
+    border: none;
+    height: 31px;
+    margin: 4px 4px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-order{background: #41AD49}
+.btn-order:hover{background: #4CCA54}
+
+.btn-cross{background: #E44061}
+.btn-cross:hover{background: #FF486D}
+
+
+.btn-order_none ,
+.btn-cross_none , 
+.empty_с_non{display: none;} 
+
+
+.empty_с
+{;
+	background: white;
+	border-radius: 5px;
+}
+
+.empty_с span
+{
+	    margin-top: 20px;
+	    margin-left: 29px;
+	    font-size: 20px;
+	    color: #BC2A54;
+}
+
+/*line*/
+.line_li{position: relative;}
+.line_li:before {
+    content: "";
+    display: inline-block;
+    left: -13px;
+    position: absolute;
+    height: 14px;
+    width: 2px;
+    top: 3px;
+    background: #7d745f;
+}
+
+/*bg*/
+
+.blue{background: #165eb9}
+.yellow{background: #ffe637}
+.gray{background: #535253}
+.brown{background: #877976}
+.black{background: #222}
+.purple{background: #d3a7ac}
+.purp_black{background: #7a0e9e}
+
+
+
+
+
+
+/*animate*/
+
+.trans{transition: all 1s}
+
+/*--------style---------*/
+
+/*nav*/
+header
+{
+	background: url(../img/bg_header.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+nav{padding-top: 42px;}
+.header_menu{position: relative;}
+.header_menu li
+{
+	display: inline-block;
+	margin-right: 52px;
+}
+
+.header_menu li:nth-child(3){margin-right: 0px;}
+.header_menu a{text-decoration: none;}
+
+
+ /*basket*/
+.basket 
+{
+    position: absolute;
+    right: 0px;
+    background: white;
+    width: 252px;
+    top: 40px;
+    border-radius: 5px;
+}
+
+.basket-non
+{
+	display: none;
+}
+
+.product_for_basket
+{
+	width: 89%;
+	 height: 60px;
+	margin: 2px 3px;
+	position: relative;
+	color:#535253;
+}
+
+.pro_photo
+{
+	display: inline-flex;
+	height: 60px;
+}
+
+.product_for_basket img
+{
+	width: 46px;
+	margin:auto;
+}
+
+.product_for_basket .color_pro
+{
+	position: absolute;
+	right: 0;
+}
+
+.product_for_basket .price_pro
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.product_for_basket .size_pro
+{
+	position: absolute;
+	right: 0;
+	bottom: 22px;
+}
+
+
+.cross 
+{
+    display: inline-block;
+    position: absolute;
+    background:white url(../img/cross.png) no-repeat center;
+    height: 60px;
+    width: 22px;
+    right: -23px;
+    cursor: pointer;
+}
+
+.cross:hover
+{
+	 background-color: #D5D5D5;
+	 transition: all 1s;
+}
+/*headers*/
+header h1
+{
+	font-size: 60px;
+	margin-top: 226px;
+}
+
+header p
+{
+	margin-top: 26px;
+	font-size: 20px; 
+}
+
+.line_top
+{
+	margin-top: 279px;
+	padding-bottom: 45px;
+}
+.line_top img{display: inline-block;}
+
+
+/*block pay product*/
+/*all conternt*/
+#content
+{
+	padding-bottom: 127px;
+}
+
+/*label options*/
+/*.menu_selection{padding-bottom: 131px;}*/
+.menu_selection label{margin-right: 36px;} 
+.menu_selection label:last-child{margin-right: 0;}
+/*checkbox options*/
+.menu_selection input{margin-right: 21px;}
+
+/*checkbox options*/
+/* Скрываем реальный чекбокс */
+.checkbox {
+    display: none;
+}
+ 
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 20px;             /* Обязательно задаем ширину */
+    height: 20px;            /* Обязательно задаем высоту */
+    border: 2px solid #aa9b77;
+    border-radius: 3px;
+}
+ 
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+ 
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+ 
+    background: url(../img/check.png) no-repeat center;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+}
+
+/*checkbox button*/
+.menu_selection button
+{
+	width: 205px;
+	height: 53px;
+	background-color: #aa9b77;
+	border: none;
+	font-size: 14px;
+	margin-right: 32px;
+}
+/*products block*/
+.products
+{
+	position: relative;
+	margin-top: 130px;
+}
+
+.choice_products ,
+.choice_products_second 
+{
+	display: inline-block;
+	position: absolute;
+}
+
+.choice_products
+{
+	right: 24px;
+	top: 55px;
+}
+
+.choice_products_second
+{
+	left: 35px;
+	top: 55px;
+}
+
+.choice_products span 
+{
+	display: block;
+	letter-spacing: 3px;
+	color: #aa9b77;
+}
+
+.choice_products_second span
+{
+	display: block;
+	letter-spacing: 3px;
+	color: #aa9b77;
+	position: relative;
+	left: 3px;
+}
+
+
+.name_block , 
+.name_block_second
+{
+	display: block;
+	color: #424242;
+	margin-bottom: 98px;
+}
+
+
+.name_block:after
+{
+	content: '';
+	position: absolute;
+	width: 1000px;
+	height: 3px;
+	background-color: #ccc;
+	right: 32px;
+	top: 7px;
+}
+
+.name_block_second:after
+{
+	content: '';
+    position: absolute;
+    width: 968px;
+    height: 3px;
+    background-color: #ccc;
+    right: 149px;
+    top: 9px;
+}
+
+
+/* product */
+.def_product
+{
+	width: 272px;
+	padding: 26px 17px;
+	border: 6px solid rgba(255,255,255,.0);
+	margin-right: 67px;
+	transition: border-color 1s;
+	position: relative;
+}
+
+.def_product:nth-child(4){margin-right: 0;}
+.def_product:hover{border-color:#aa9b77;}
+
+/*choice*/
+.choice
+{
+	position: relative;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	color:#424242;
+	cursor: pointer;
+	width: 57px;
+
+	background-image: url('../img/line_select.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+
+	/*for WebKit*/
+	 -webkit-appearance: none;
+	 /* for FF */
+	  -moz-appearance: none;
+	  text-indent: 0.01px; 
+	  text-overflow: '';
+	  /* for IE */
+	  -ms-appearance: none;
+	  appearance: none!important;
+}
+
+
+/*form_color*/
+
+.form_color input , 
+.product_for_basket input{display: none;}
+
+.form_color label ,
+.product_for_basket label{display: inline-block;}
+
+.product_for_basket i ,
+.form_color i
+{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.form_color input[type = "radio"]+i , 
+.product_for_basket input[type = "radio"]+i{border-radius: 50%;}
+
+.form_color i:before
+{
+	content: "";
+	position: absolute;
+	top: 5px;bottom: 5px;
+	left: 5px;right: 5px;
+	background: black;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: all 1s;
+}
+
+.form_color input:checked+i:before{transform: scale(1);}
+
+
+.product_photo
+{
+	height: 289px;
+	display: flex;
+}
+
+.product_photo img
+{
+	display: inline-block;
+	margin: auto;
+}
+
+.name_product{
+	font-size: 18px;
+	color: #aa9b77;
+}
+
+.price_product
+{
+	font-size: 22px;
+	color: #424242;
+}
+
+.about_product , 
+.take_basket
+{
+	width: 100%;
+	height: 40px;
+	border: none;
+	color:white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.about_product{background: #55ACEE}
+.about_product:hover{background: #5BB8FF}
+.take_basket{background: #41AD49}
+.take_basket:hover{background: #4CCA54}
+
+
+
+.about_product_list_non
+{
+	display: none;
+}
+
+.about_product_list
+{
+	display: block;
+	position: relative;
+	width: 272px;
+	color:black;
+}
+
+
+
+/*button fixed*/
+
+.block_f
+{
+	position: fixed;
+	 right: 19px;
+    bottom: 0px;
+}
+
+.block_f_none
+{
+	display: none;
+}
+
+
+
+.button_up_cl {
+    background-color: #FDDD3A;
+    border: none;
+    height: 38px;
+    width: 202px;
+    color: #333;
+    font-size: 17px;
+    font-family: "Open Sans", Arial;
+    /* font-weight: 100; */
+    border-top-left-radius: 10px;
+}
+
+
+.cross_fix_b
+{
+	display: inline-block;
+	background:#FDDD3A url(../img/basket_2.png) center no-repeat;
+	height: 38px;
+	width: 40px;
+	border-top-right-radius: 10px;
+}
+
+
+.cross_fix_b:hover
+{
+	background-color: #CAAE11;
+}
+
+
+/*about*/
+#about{background: #aa9b77;}
+
+#about legend
+{
+	display: inline-block;
+	padding: 0 10px;
+	color: #918363;
+	font-size: 21px;
+}
+
+#about fieldset
+{
+	border: 2px solid #918363;
+	width: 711px;
+	display: inline-block;
+	margin: 71px 0;
+}
+
+#about .about_content
+{
+	max-width: 479px;
+	display: inline-block;
+	padding-top:83px;
+	padding-bottom:77px;
+	font-size: 16px;
+	color: #424242;
+}
+
+/*social*/
+#social
+{
+	background: #535253;
+	padding: 23px 0 21px 0px;
+}
+
+
+#social span
+{
+	color: white;
+	display: inline-block;
+	position: relative;
+	bottom: 4px;
+	margin-left: 22px;
+}
+
+/*footer*/
+footer
+{
+	background: #424242;
+	padding-top: 107px;
+	padding-bottom: 114px;
+}
+
+footer h4{font-size: 20px;}
+
+
+footer p
+{
+	max-width: 307px;
+	font-size: 10px;
+	padding-top: 20px;
+	line-height:17px;
+}
+
+.menu_footer li
+{
+	margin-left: 30px;
+	list-style-type: none;
+}
+
+.menu_footer a
+{
+	text-decoration: none;
+	font-weight: 100;
+}
+
+
+.Design
+{
+	display: block;
+	padding-top: 35px;
+	font-size: 20px;
+	font-weight: bold;
+}

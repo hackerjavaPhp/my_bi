@@ -32,7 +32,7 @@ function basket_remove()
 }
 
 
-setInterval(basket_remove , 100);
+setInterval(basket_remove , 10);
 
 
 
@@ -584,6 +584,31 @@ function func_check_block()
 
 
 
+
+// checkbox _big_block
+
+var btn_c = documen_t.querySelector("#btn_c") , 
+    btn_o = documen_t.querySelector("#btn_o");
+
+btn_c.addEventListener('click', rest_button);
+
+function rest_button()
+{
+    var children_search = btn_c.parentNode.children[0] , 
+        cr_span = documen_t.createElement("span");
+        cr_span.setAttribute("id", "anchor") , 
+        box_basket = documen_t.querySelector("#box_basket");
+
+        children_search.remove();
+
+        box_basket.insertBefore(cr_span, btn_o);
+
+
+        // label.appendChild(cr_span);
+
+
+
+}
 
 
 

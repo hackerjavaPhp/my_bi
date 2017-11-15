@@ -144,6 +144,7 @@ nav{padding-top: 42px;}
 
 
  /*basket*/
+
 .basket 
 {
     position: absolute;
@@ -167,6 +168,14 @@ nav{padding-top: 42px;}
 	position: relative;
 	color:#535253;
 }
+
+.product_for_basket:hover
+{
+	background: #E7E4E7;
+	transition: all 1s;
+}
+
+
 
 .pro_photo
 {
@@ -305,6 +314,7 @@ header p
 {
 	position: relative;
 	margin-top: 130px;
+	overflow: hidden;
 }
 
 .choice_products ,
@@ -376,17 +386,32 @@ header p
 
 
 /* product */
+
+
+
+.list_go
+{
+	/*background: red;*/
+	padding: 0;
+	margin: 0;
+	width: 1536px;
+	position: relative;
+	left: 0;
+	transition: all 1s;
+}
+
+
 .def_product
 {
 	width: 272px;
 	padding: 26px 17px;
 	border: 6px solid rgba(255,255,255,.0);
-	margin-right: 67px;
+	margin-left: 67px;
 	transition: border-color 1s;
 	position: relative;
 }
 
-.def_product:nth-child(4){margin-right: 0;}
+.def_product:first-child{margin-left: 32px;}
 .def_product:hover{border-color:#aa9b77;}
 
 /*choice*/
@@ -580,6 +605,84 @@ header p
 	padding-bottom:77px;
 	font-size: 16px;
 	color: #424242;
+}
+
+/*map*/
+
+.map h3
+{
+    font-size: 40px;
+    padding-top:53px;
+    color:#918363;
+}
+
+.map p
+{
+    margin-top: 33px;
+    color:#918363
+}
+
+.map iframe
+{
+    padding-top:51px;
+}
+
+.form_w_map
+{
+    width: 863px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.form_w_map input[type = "text"] , 
+.form_w_map input[type = "email"] ,
+.form_w_map textarea
+{
+    padding: 8px 0;
+    width: 388px;
+    padding-left: 29px;
+    font-size: 18px;
+    border: 1px solid #918363;
+    color:#918363;
+    outline: none;
+}
+
+
+.form_w_map input[type = "text"]:focus, 
+.form_w_map input[type = "email"]:focus,
+.form_w_map textarea:focus
+{
+	border: 1px solid #EA6060;
+	transition:border-color 1s;
+}
+
+
+
+.form_w_map textarea
+{
+   width: 96.4%;
+   margin-top: 27px;
+   min-height: 201px;
+}
+
+.form_w_map input[type = "submit"]
+{
+    width: 161px;
+    height: 56px;
+    font-size: 18px;
+    background: #ea6060;
+    color:white;
+    border: none;
+    margin:62px auto;
+    display: block;
+    transition:background 1s;
+}
+
+.form_w_map input[type = "submit"]:hover{background-color: #FF4747;}
+.form_w_map input[type = "submit"]:active
+{
+	background-color: #41AD49;
+	transition: none;
 }
 
 /*social*/

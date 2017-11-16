@@ -1036,6 +1036,27 @@ var dinamic_block_left = documen_t.querySelectorAll(".dinamic_block_left") ,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // scroll
 
 
@@ -1074,6 +1095,71 @@ var dinamic_block_left = documen_t.querySelectorAll(".dinamic_block_left") ,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// auto number in block products
+
+// part1
+
+var def_product = documen_t.querySelectorAll(".def_product");
+    
+    for(var i = 0 ; i < def_product.length ; i++)
+    {
+        def_product[i].addEventListener("mouseover" , func_def_product_m);
+    }
+
+
+    function func_def_product_m()
+    {
+        var th_def = this.parentNode.parentNode.children[0].children[0].children[0].children[0];
+        
+        var mass_len_ch = this.parentNode.children;
+
+
+        for(var i = 0 ; i< mass_len_ch.length; i++)
+        {
+            if(mass_len_ch[i] == this)
+            {
+                console.log(th_def.innerHTML = (i + 1));
+            }
+        }
+
+
+    }
 
 
 

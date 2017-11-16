@@ -353,6 +353,12 @@ header p
 }
 
 
+.show_d
+{
+	display: inline-block !important;
+	width: 8px;
+}
+
 .name_block , 
 .name_block_second
 {

@@ -926,7 +926,7 @@ function func_dinamic_l()
 {
     var element = this.parentNode.parentNode.parentNode.children[1] ,
     dvi = func_dv(element);
-    dvi_len_r(dvi, element);
+    dvi_len_l(dvi, element);
 }
 
 
@@ -962,7 +962,10 @@ function func_dv(element){
 
 // ask_r
 
-function dvi_len_r(dvi , element)
+
+if(screen.width >= 1174)
+{
+    function dvi_len_l(dvi , element)
         {
             switch(dvi.length)
             {
@@ -974,14 +977,13 @@ function dvi_len_r(dvi , element)
                             left = 0;
                         }
 
-                    element.style.left = left + "px";
+                    // element.style.left = left + "px";
+                    element.style.transform = 'translateX(' + left + 'px)';
                 };
                 break;
             }
         }
 
-
-// ask_r
 
  function dvi_len_r(dvi, element)
     {
@@ -997,11 +999,111 @@ function dvi_len_r(dvi , element)
                             left = -385;
                         }
 
-                    element.style.left = left + "px";
+                     element.style.transform = 'translateX(' + left + 'px)';
                 };
                 break;
             }
     }
+}
+else if(screen.width < 800)
+{
+     function dvi_len_l(dvi , element)
+        {   
+            switch(dvi.length)
+            {
+                case 4:{
+                     left = left + 317;
+
+                    if(left == 317)
+                        {
+                            left = - 634;
+                        }
+
+                    element.style.transform = 'translateX(' + left + 'px)';
+                };
+                break;
+            }
+        }
+
+
+ function dvi_len_r(dvi, element)
+    {
+         switch(dvi.length)
+            {
+                case 4:{
+                  
+                    left = left - 317;
+
+                    console.log(left);
+                    if(left == - 951)
+                        {
+                            left = 0;
+                        }
+
+                     element.style.transform = 'translateX(' + left + 'px)';
+                };
+                break;
+            }
+    }
+}
+else if(screen.width < 1174)
+{
+
+    // ask_l
+
+
+
+    function dvi_len_l(dvi , element)
+        {
+            switch(dvi.length)
+            {
+                case 4:{
+                     left = left + 385;
+
+                    if(left == 385)
+                        {
+                            left = - 770;
+                        }
+
+                   element.style.transform = 'translateX(' + left + 'px)';
+                };
+                break;
+            }
+        }
+
+
+ function dvi_len_r(dvi, element)
+    {
+         switch(dvi.length)
+            {
+                case 4:{
+                  
+                    left = left - 385;
+
+                    console.log(left);
+                    if(left == - 1155)
+                        {
+                            left = 0;
+                        }
+
+                   element.style.transform = 'translateX(' + left + 'px)';
+                };
+                break;
+            }
+    }
+}
+
+
+
+ 
+// scrolling the goods horizontally
+
+
+
+
+
+
+
 
 
 
@@ -1154,12 +1256,82 @@ var def_product = documen_t.querySelectorAll(".def_product");
         {
             if(mass_len_ch[i] == this)
             {
-                console.log(th_def.innerHTML = (i + 1));
+                th_def.innerHTML = (i + 1);
             }
         }
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// form buy click
+
+var btn_o = documen_t.getElementById("btn_o") , 
+ window_form = documen_t.getElementsByClassName(".window-form");
+
+console.log(window_form);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

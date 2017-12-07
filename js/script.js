@@ -1290,9 +1290,67 @@ var def_product = documen_t.querySelectorAll(".def_product");
 // form buy click
 
 var btn_o = documen_t.getElementById("btn_o") , 
- window_form = documen_t.getElementsByClassName(".window-form");
+ window_form = documen_t.getElementsByClassName("window-form") ,
+    html = documen_t.getElementsByTagName("html");
 
-console.log(window_form);
+
+btn_o.onclick = function()
+{
+    window_form[0].style.display = "block";
+     html[0].style.overflow = "hidden";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// cross form buy clik 
+
+var form_buy_cross = documen_t.getElementsByClassName("form_buy_cross");
+
+    form_buy_cross[0].onclick = function()
+    {
+         window_form[0].style.display = "none";
+         html[0].style.overflow = "auto";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

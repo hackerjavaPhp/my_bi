@@ -876,10 +876,76 @@ footer p
 	display: none;
 }
 
-.form_buy_pr .product_for_basket {
-    width: 95%;
-    height: 60px;
-    margin: 2px 3px;
+.form_buy_pr_product
+{
+	height: 60px;
+	/*background-color: red*/
+	position: relative;
+}
+
+.form_buy_pr_product_show {
+    float: left;
+    width: 100px;
+    height: 100%;
+    /*background-color: black;*/
+}
+
+.form_buy_pr_product_info {
+    float: right;
+    width: 159px;
+    height: 100%;
+    /*background-color: green;*/
     position: relative;
-    color: #535253;
+}
+
+.form_buy_pr_product_show_photo
+{
+	height: 100%;
+}
+
+.form_buy_pr_product_show_circle {
+    height: 18px;
+    width: 18px;
+    background-color: purple;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.form_buy_pr_product_info_name ,
+.form_buy_pr_product_info_size ,
+.form_buy_pr_product_info_price
+{
+	display: block;
+	position: absolute;
+	right: 10px;
+	text-transform: uppercase;
+	color: #535258;
+}
+
+.form_buy_pr_product_info_name 
+{
+	top: 5px;
+}
+
+.form_buy_pr_product_info_size
+{
+	top: 23px;
+}
+
+.form_buy_pr_product_info_price
+{
+	top:40px;
+}
+
+.form_buy_pr_cross {
+    float: right;
+    height: 60px;
+    width: 21px;
+}
+
+.form_buy_pr_cross_ph {
+    /* margin-top: 21px; */
+    position: relative;
+    top: 21px;
+    right: 2px;
 }

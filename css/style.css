@@ -827,7 +827,7 @@ footer p
 	margin:0  auto;
 	border-radius: 6px;
 	overflow:hidden;
-	margin-top: 10%;
+	margin-top: 6%;
 	padding-bottom: 20px;
 	position: relative;
 }
@@ -871,7 +871,7 @@ footer p
 	width: 305px;
 }
 
-.form_buy_in
+.form_buy_pr
 {
 	display: none;
 }
@@ -948,4 +948,53 @@ footer p
     position: relative;
     top: 21px;
     right: 2px;
+}
+
+.form_buy_in_block
+{
+	text-align: center;
+}
+
+.form_buy_in_price ,
+.form_buy_in_bay
+{
+    /* display: block; */
+    height: 51px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.form_buy_in_bay
+{
+	width: 175px
+}
+
+.form_buy_in_price 
+{
+	width: 328px;
+}
+
+.form_buy_in_op .form_buy_in_op_description {
+    font-size: 11px;
+    background-color: #fff;
+    text-align: center;
+    /* font-size: 24px; */
+    padding: 15px;
+    color: red;
+    /* width: 399px; */
+}
+
+.form_buy_in_op p 
+{
+	background-color: white;
+	color: black;
+}
+
+.form_buy_pr .form_buy_pr_cross_pr {
+    background-color: #fff;
+    color: #53524E !important;
+    font-size: 34px !important;
+    border-top: 1px solid #d9d9d9 !important;
+    margin-top: 10px !important;
+    padding-top: 32px;
 }
